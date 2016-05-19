@@ -4,4 +4,7 @@ build:
 run: build
 	heroku local web
 
-.PHONY: build run
+clean:
+	rm github-review-bot
+
+.PHONY: build run clean
