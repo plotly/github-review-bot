@@ -1,0 +1,14 @@
+{
+  "name": "github-review-bot",
+  "description": "GutHub bot to help you select reviewers",
+  "keywords": [
+    "github",
+    "review",
+    "bot",
+    "pull request"
+  ],
+  "image": "heroku/go:1.6",
+  "mount_dir": "src/github.com/kiasaki/github-review-bot",
+  "website": "http://github.com/kiasaki/github-review-bot",
+  "repository": "http://github.com/kiasaki/github-review-bot"
+}

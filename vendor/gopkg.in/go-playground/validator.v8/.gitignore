@@ -22,7 +22,8 @@ _testmain.go
 *.exe
 *.test
 *.prof
-
-github-review-bot
-
-.env
+*.test
+*.out
+*.txt
+cover.html
+README.html
