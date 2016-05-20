@@ -20,8 +20,9 @@
             "description": "The name the bot answers to (usually the username of the bot account)",
             "required": true
         },
-        "BOT_TEAM_FRONTENT": {
-            "description": "A list of the possible reviewers for the frontend team (See README for format)"
+        "BOT_TEAM_FRONTEND": {
+            "description": "A list of the possible reviewers for the frontend team (See README for format)",
+            "required": false
         }
     }
 }
