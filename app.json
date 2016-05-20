@@ -1,14 +1,27 @@
 {
-  "name": "github-review-bot",
-  "description": "GutHub bot to help you select reviewers",
-  "keywords": [
-    "github",
-    "review",
-    "bot",
-    "pull request"
-  ],
-  "image": "heroku/go:1.6",
-  "mount_dir": "src/github.com/kiasaki/github-review-bot",
-  "website": "http://github.com/kiasaki/github-review-bot",
-  "repository": "http://github.com/kiasaki/github-review-bot"
+    "name": "github-review-bot",
+    "description": "GutHub bot to help you select reviewers",
+    "keywords": [
+        "github",
+        "review",
+        "bot",
+        "pull request"
+    ],
+    "image": "heroku/go:1.6",
+    "mount_dir": "src/github.com/kiasaki/github-review-bot",
+    "website": "http://github.com/kiasaki/github-review-bot",
+    "repository": "http://github.com/kiasaki/github-review-bot",
+    "env": {
+        "GITHUB_TOKEN": {
+            "description": "A GitHub personnal access token from the bot's account",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "The name the bot answers to (usually the username of the bot account)",
+            "required": true
+        },
+        "BOT_TEAM_FRONTENT": {
+            "description": "A list of the possible reviewers for the frontend team (See README for format)"
+        }
+    }
 }
