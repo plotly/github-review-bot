@@ -47,7 +47,7 @@ func handleIssueCommentEvent(event GithubIssueCommentPayload) error {
 
 	var comment string
 	if senior != "" && junior != "" {
-		comment = fmt.Sprintf("I propose @%v and @%v as reviewers!", senior, junior)
+		comment = fmt.Sprintf("Thanks for submitting. @%v and @%v: please review!", senior, junior)
 	} else if senior != "" {
 		comment = fmt.Sprintf("I propose @%v as reviewer!", senior)
 	} else if junior != "" {
